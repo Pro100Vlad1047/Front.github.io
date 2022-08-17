@@ -1,0 +1,1091 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  font-family: Lato;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0% auto 0px auto;
+  text-align: center;
+}
+.container .preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(../Block_preview/BG-Header.png) 0 0/cover no-repeat;
+  height: 100vh;
+}
+.container .preview .preview_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100vh;
+  width: 52.5vw;
+}
+.container .preview .preview_body .preview_img {
+  height: 20%;
+}
+.container .preview .preview_body .preview_img img {
+  height: 100%;
+}
+.container .preview .preview_body .preview_h2 {
+  position: relative;
+  font-family: Lato;
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  color: whitesmoke;
+  letter-spacing: 5px;
+  line-height: 50px;
+}
+.container .preview .preview_body .preview_h2:after {
+  content: " ";
+  position: absolute;
+  left: 23.6vw;
+  width: 5vw;
+  height: 1.8px;
+  background-color: white;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.container .preview .preview_body .preview_h2 .preview_h2_uppercased {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 7px;
+}
+.container .preview .preview_body .preview_button button {
+  position: relative;
+  background-color: inherit;
+  border: 1.5px solid whitesmoke;
+  padding: 15px 40px 15px 40px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  width: 10.81vw;
+  height: 2.6vh;
+}
+.container .preview .preview_body .preview_button button:hover {
+  width: 14.81vw;
+}
+.container .preview .preview_body .preview_button button:hover .Button_Anim_preview {
+  height: 50px;
+  width: 14.81vw;
+}
+.container .preview .preview_body .preview_button button:hover p {
+  color: black;
+}
+.container .preview .preview_body .preview_button button .Button_Anim_preview {
+  position: absolute;
+  width: 10.81vw;
+  height: 0px;
+  background-color: whitesmoke;
+  left: 0px;
+  bottom: 0px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  z-index: 0;
+}
+.container .preview .preview_body .preview_button p {
+  position: absolute;
+  font-family: Lato;
+  color: whitesmoke;
+  text-transform: uppercase;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.container .preview .preview_body .preview_arrow {
+  height: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .preview .preview_body .preview_arrow a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 50%;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.container .preview .preview_body .preview_arrow a div {
+  width: 100%;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+  height: 30%;
+}
+.container .preview .preview_body .preview_arrow a div img {
+  height: 100%;
+  -webkit-transition: 2s all;
+  transition: 2s all;
+}
+.container .preview .preview_body .preview_arrow a div:hover {
+  height: 50%;
+}
+.container .Nav_bar {
+  position: sticky;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-bottom: 1px solid #D3D3D3;
+  background-color: whitesmoke;
+  z-index: 10;
+}
+.container .Nav_bar div {
+  width: 130px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .Nav_bar div a {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  color: black;
+}
+.container .Nav_bar div a:hover {
+  color: #F4D03F;
+}
+.container .Nav_bar div a:active {
+  color: #F39C12;
+}
+.container .About {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .About .About_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .About .About_body .About_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .About .About_body .About_title .About_h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40%;
+}
+.container .About .About_body .About_title .About_h2 h2 {
+  position: relative;
+  font-weight: bold;
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+  width: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .About .About_body .About_title .About_h2 h2:after {
+  content: " ";
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  width: 5.5vw;
+  height: 0.1vh;
+  background-color: black;
+  top: 8vh;
+}
+.container .About .About_body .About_title .About_subtitle {
+  line-height: 4vh;
+  font-size: 1vw;
+  color: #B1B1B1;
+}
+.container .About .About_body .About_portable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 66vw;
+}
+.container .About .About_body .About_portable .About_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15vh;
+  width: 15vh;
+  border: #D3D3D3 2px solid;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .About .About_body .About_portable .About_img img {
+  height: 6vh;
+}
+.container .About .About_body .About_portable .About_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  height: 80%;
+}
+.container .About .About_body .About_portable .About_left .About_left_title {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 2vw;
+}
+.container .About .About_body .About_portable .About_left .About_left_subtitle {
+  width: 100%;
+  color: #B1B1B1;
+  line-height: 3vh;
+  font-size: 1vw;
+}
+.container .About .About_body .About_portable .About_center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33%;
+  height: 80%;
+}
+.container .About .About_body .About_portable .About_center .About_center_title {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 1.5vw;
+}
+.container .About .About_body .About_portable .About_center .About_center_subtitle {
+  width: 100%;
+  color: #B1B1B1;
+  line-height: 3vh;
+  font-size: 1vw;
+}
+.container .About .About_body .About_portable .About_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33%;
+  height: 80%;
+}
+.container .About .About_body .About_portable .About_right img {
+  margin-left: 7px;
+}
+.container .About .About_body .About_portable .About_right .About_right_title {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 1.5vw;
+}
+.container .About .About_body .About_portable .About_right .About_right_subtitle {
+  width: 100%;
+  color: #B1B1B1;
+  line-height: 3vh;
+  font-size: 1vw;
+}
+.container .Portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #F1F1F1;
+}
+.container .Portfolio .Portfolio_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+  height: 170vh;
+  margin-top: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .Portfolio .Portfolio_body .Portfolio_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.container .Portfolio .Portfolio_body .Portfolio_title h2 {
+  text-transform: uppercase;
+  position: relative;
+  font-weight: bold;
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+  width: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .Portfolio .Portfolio_body .Portfolio_title h2:after {
+  content: " ";
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  width: 5.5vw;
+  height: 0.1vh;
+  background-color: black;
+  top: 8vh;
+}
+.container .Portfolio .Portfolio_body .Portfolio_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+.container .Portfolio .Portfolio_body .Portfolio_menu div {
+  width: 5vw;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .Portfolio .Portfolio_body .Portfolio_menu div a {
+  text-transform: uppercase;
+  font-size: 1.2vw;
+  font-weight: 500;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.container .Portfolio .Portfolio_body .Portfolio_menu div a:hover {
+  color: #F4D03F;
+}
+.container .Portfolio .Portfolio_body .Portfolio_menu div a:active {
+  color: #F39C12;
+}
+.container .Portfolio .Portfolio_body .Portfolio_images {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60vw;
+  height: 55vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+.container .Portfolio .Portfolio_body .Portfolio_images div {
+  position: relative;
+  width: 47%;
+  height: 20%;
+}
+.container .Portfolio .Portfolio_body .Portfolio_images div img {
+  position: absolute;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  -webkit-box-shadow: 0px 0px 15px #B1B1B1;
+          box-shadow: 0px 0px 15px #B1B1B1;
+  border-radius: 4px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.container .Portfolio .Portfolio_body .Portfolio_images div img:hover {
+  position: relative;
+  width: 105%;
+}
+.container .Portfolio .Portfolio_body .Portfolio_button button {
+  position: relative;
+  background-color: inherit;
+  width: 10.81vw;
+  height: 2.6vh;
+  border: 1.5px solid black;
+  padding: 15px 40px 15px 40px;
+  overflow: hidden;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.container .Portfolio .Portfolio_body .Portfolio_button button:hover {
+  width: 14.81vw;
+}
+.container .Portfolio .Portfolio_body .Portfolio_button button:hover .Button_Anim_portfolio {
+  height: 50px;
+}
+.container .Portfolio .Portfolio_body .Portfolio_button button:hover p {
+  color: whitesmoke;
+}
+.container .Portfolio .Portfolio_body .Portfolio_button button .Button_Anim_portfolio {
+  position: absolute;
+  width: 14.81vw;
+  height: 0px;
+  background-color: #B1B1B1;
+  left: 0px;
+  bottom: 0px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  z-index: 0;
+}
+.container .Portfolio .Portfolio_body .Portfolio_button p {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 160px;
+  font-family: Lato;
+  color: black;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.container .Partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../Block_Partners/Partners_background.png) 0 0/cover no-repeat;
+}
+.container .Partners .Partners_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60vw;
+  height: 30vh;
+}
+.container .Partners .Partners_body .Partners_title {
+  color: #FFFFFF;
+  font-size: 4vw;
+  line-height: 50px;
+  height: 20px;
+}
+.container .Partners .Partners_body .Partners_logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+}
+.container .Partners .Partners_body .Partners_logos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20vw;
+}
+.container .Partners .Partners_body .Partners_logos div img {
+  height: 100%;
+}
+.container .Partners .Partners_body .Partners_logos div:nth-child(1) {
+  margin-top: 4px;
+}
+.container .Partners .Partners_body .Partners_logos div:nth-child(4) {
+  margin-top: 0vw;
+}
+.container .Contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .Contact .Contact_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70vw;
+  height: 100vh;
+}
+.container .Contact .Contact_body .Contact_title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 0.4vw;
+  text-transform: uppercase;
+  font-size: 2vw;
+  margin-bottom: 10%;
+}
+.container .Contact .Contact_body .Contact_title h2 {
+  font-weight: bold;
+}
+.container .Contact .Contact_body .Contact_title:after {
+  content: " ";
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  width: 5.5vw;
+  height: 0.1vh;
+  background-color: black;
+  top: 6vh;
+}
+.container .Contact .Contact_body .Contact_info-forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 50vh;
+  width: 80vw;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 45%;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_forms form {
+  height: 100%;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_forms .Contact_register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 20%;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_forms .Contact_register p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1vw;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_forms .Contact_register .Contact_username {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 45%;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_forms .Contact_register .Contact_username input {
+  width: 100%;
+  border-top: 2px black solid;
+  background-color: #F1F1F1;
+  line-height: 35px;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_forms .Contact_register .Contact_user-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 45%;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_forms .Contact_register .Contact_user-email input {
+  width: 100%;
+  border-top: 2px black solid;
+  background-color: #F1F1F1;
+  line-height: 35px;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_forms .Contact_message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 30vh;
+  width: 100%;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_forms .Contact_message div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1vw;
+  height: 10%;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_forms .Contact_message textarea {
+  width: 100%;
+  height: 80%;
+  border-top: 2px black solid;
+  background-color: #F1F1F1;
+  line-height: 35px;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_forms .Contact_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 10%;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_forms .Contact_button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 30%;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: inherit;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_forms .Contact_button button p {
+  font-size: 1.2vw;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_info {
+  width: 45%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_info .Contact_txt {
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  line-height: 25px;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_info .Contact_txt p {
+  font-size: 1.2vw;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_info .Contact_post-scriptum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_info .Contact_post-scriptum h2 {
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_info .Contact_icons {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 67px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_info .Contact_icons .Contact_facebook-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+  width: 30px;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_info .Contact_icons .Contact_circle-icon_1 {
+  position: absolute;
+  top: 20px;
+  left: 1px;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_info .Contact_icons .Contact_in-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  width: 40px;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_info .Contact_icons .Contact_circle-icon_2 {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_info .Contact_self-email {
+  height: 6vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3vw;
+}
+.container .Contact .Contact_body .Contact_info-forms .Contact_info .Contact_self-email a {
+  font-weight: 900;
+  color: black;
+}
